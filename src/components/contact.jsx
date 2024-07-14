@@ -1,0 +1,19 @@
+export default function contactMe() {
+<div>
+  <div>
+    <h3>Name:</h3>
+    <input></input>
+  </div>
+  <div>
+    <h3>Email:</h3>
+    <input></input>
+  </div>
+  <div>
+    <h3>Message:</h3>
+    <input></input>
+  </div>
+  <div>
+    <button>Submit</button>
+  </div>
+</div>
+}
