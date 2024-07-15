@@ -4,6 +4,7 @@ import StoryRouletteImage from '../images/storyRoulette.png'
 import EmployeeTrackerImage from '../images/employeeTracker.png'
 import MovieNightImage from '../images/movieNight.png'
 import PortfolioList from "./portfolioList";
+import '../portfolio.css'
 
 export default function portfolio() {
   let portfolioData = [
@@ -35,8 +36,10 @@ export default function portfolio() {
 
   return(
     <div>
-      <h3>My Portfolio</h3>
-      <PortfolioList portfolioData={portfolioData} />
+      <h3 className="pageTitle">My Portfolio</h3>
+      <div className='portfolio-card-container'>
+        <PortfolioList portfolioData={portfolioData} />
+      </div>
     </div>
   );
 };

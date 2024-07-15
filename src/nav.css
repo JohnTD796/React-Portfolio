@@ -1,0 +1,22 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  background-color: lightgreen;
+}
+
+h2 {
+  color: black;
+  padding: 10px 10px 10px 10px
+}
+
+.navbar-links {
+  display: flex;
+  text-decoration: none;
+}
+
+.nav-link-item {
+  text-decoration: none;
+  display: flex;
+  padding: 10px;
+}
