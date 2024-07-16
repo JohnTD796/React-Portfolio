@@ -1,0 +1,23 @@
+.contactContainer h2{
+  color: darkblue;
+}
+
+.inputDiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 30% 10px 30%
+}
+
+.inputDiv button {
+  margin: 10px 40% 10px 40%;
+}
+
+.inputDiv textarea {
+  height: 100px;
+}
+
+.contactError {
+  padding: 5px;
+  color: darkblue;
+}

@@ -2,12 +2,14 @@
   display: flex;
   justify-content: space-between;
   padding-right: 10px;
-  background-color: lightgreen;
+  background-color: darkblue;
+  box-shadow: 5px 5px 10px 0px white;
 }
 
 h2 {
-  color: black;
-  padding: 10px 10px 10px 10px
+  color: lightblue;
+  font-size: 150%;
+  padding: 10px 10px 10px 10px;
 }
 
 .navbar-links {
@@ -19,4 +21,6 @@ h2 {
   text-decoration: none;
   display: flex;
   padding: 10px;
+  font-size: 150%;
+  color: lightblue;
 }

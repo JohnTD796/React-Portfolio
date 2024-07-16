@@ -1,0 +1,16 @@
+.aboutMeText {
+  display: flex;
+  padding: 5px 70px 5px 70px;
+  font-size: 120%;
+  color: darkblue;
+  margin: 20px;
+  text-indent: 30px;
+}
+
+.faIcon {
+  font-size: 500%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color: darkblue;
+}
