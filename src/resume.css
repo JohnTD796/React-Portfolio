@@ -1,0 +1,22 @@
+.resumeBodyContainer {
+padding: 20px 0px 20px 90px;
+}
+
+.downloadResume {
+  padding: 10px;
+}
+
+.resumeTitle {
+  font-size: 175%;
+  padding: 10px 10px 0px 10px;
+}
+
+.resumeUl {
+  list-style-type: disc;
+  padding: 20px 0px 20px 30px;
+}
+
+.resumeLi {
+  font-size: 125%;
+  padding: 5px 20px 5px 5px
+}

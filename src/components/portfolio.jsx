@@ -31,7 +31,20 @@ export default function portfolio() {
       title: 'Movie Night',
       projectUrl: 'https://github.com/tawatson02/movie-night.git',
       imageUrl: MovieNightImage
-    }
+    },
+    {
+      id: 5,
+      title: 'Movie Night',
+      projectUrl: 'https://github.com/tawatson02/movie-night.git',
+      imageUrl: MovieNightImage
+    },
+    {
+      id: 6,
+      title: 'Movie Night',
+      projectUrl: 'https://github.com/tawatson02/movie-night.git',
+      imageUrl: MovieNightImage
+    },
+    
   ]
 
   return(
