@@ -28,7 +28,7 @@ export default function Contact() {
         <input 
           type='text' 
           value={name} 
-          onchange={(e) => setName(e.target.value)}
+          onChange={(e) => setName(e.target.value)}
           onBlur={() => handleError('name')}
           ></input>
           {errors.name && <div className='contactError'>{errors.name}</div>}
@@ -38,7 +38,7 @@ export default function Contact() {
         <input 
           type='text' 
           value={email} 
-          onchange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setEmail(e.target.value)}
           onBlur={() => handleError('email')}
           ></input>
           {errors.email && <div className='contactError'>{errors.email}</div>}
@@ -48,7 +48,7 @@ export default function Contact() {
         <textarea 
           type='text' 
           value={message} 
-          onchange={(e) => setMessage(e.target.value)}
+          onChange={(e) => setMessage(e.target.value)}
           onBlur={() => handleError('message')}
           ></textarea>
           {errors.message && <div className='contactError'>{errors.message}</div>}
