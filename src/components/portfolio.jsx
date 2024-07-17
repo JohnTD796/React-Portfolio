@@ -1,7 +1,9 @@
-import SocialNetworkImage from '../images/SocialNetwork.png'
+import SocialNetworkImage from '../images/socialNetwork.png'
 import StoryRouletteImage from '../images/storyRoulette.png'
 import EmployeeTrackerImage from '../images/employeeTracker.png'
 import MovieNightImage from '../images/movieNight.png'
+import readmeGenerator from '../images/readmeGenerator.png'
+import personalBlog from '../images/personalBlog.png'
 import PortfolioList from "./portfolioList";
 import '../portfolio.css'
 
@@ -27,9 +29,9 @@ export default function portfolio() {
     },
     {
       id: 4,
-      title: 'Movie Night',
-      projectUrl: 'https://github.com/tawatson02/movie-night.git',
-      imageUrl: MovieNightImage
+      title: 'Professional README Generator',
+      projectUrl: 'https://github.com/JohnTD796/Professional-README-Generator.git',
+      imageUrl: readmeGenerator
     },
     {
       id: 5,
@@ -39,9 +41,9 @@ export default function portfolio() {
     },
     {
       id: 6,
-      title: 'Movie Night',
-      projectUrl: 'https://github.com/tawatson02/movie-night.git',
-      imageUrl: MovieNightImage
+      title: 'Personal Blog',
+      projectUrl: 'https://github.com/JohnTD796/Personal-Blog.git',
+      imageUrl: personalBlog
     },
     
   ]
