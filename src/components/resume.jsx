@@ -3,7 +3,9 @@ import '../resume.css'
 export default function Resume() {
   return (
     <div>
-      <h3 className="pageTitle">Resume</h3>
+      <div className='pageTitleContainer'>
+        <h3 className="pageTitle">Resume</h3>
+      </div>
       <div className='resumeBodyContainer'>
         <div>
           <div className='downloadResume'>Download my Resume:</div>

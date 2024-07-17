@@ -1,5 +1,5 @@
 .contactContainer h2{
-  color: darkblue;
+  color: #201E1F;
 }
 
 .inputDiv {
@@ -19,5 +19,5 @@
 
 .contactError {
   padding: 5px;
-  color: darkblue;
+  color: #201E1F;
 }

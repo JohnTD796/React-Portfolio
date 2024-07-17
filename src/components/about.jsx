@@ -5,7 +5,9 @@ import { faUser} from '@fortawesome/free-solid-svg-icons';
 export default function aboutMe() {
  return (
   <div>
-    <h3 className="pageTitle">About Me</h3>
+    <div className='pageTitleContainer'>
+      <h3 className="pageTitle">About Me</h3>
+    </div>
     <div>
         <p className='faIcon'><FontAwesomeIcon icon={faUser} /></p>
     </div>

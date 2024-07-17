@@ -1,4 +1,3 @@
-import React from 'react';
 import '../portfolio.css'
 
 export default function PortfolioCard({title, projectUrl, imageUrl}) {

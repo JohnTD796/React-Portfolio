@@ -4,16 +4,22 @@ padding: 20px 0px 20px 90px;
 
 .downloadResume {
   padding: 10px;
+  color: #201E1F;
 }
 
 .resumeTitle {
+  display: inline-block;
   font-size: 175%;
-  padding: 10px 10px 0px 10px;
+  padding: 10px 0px 0px 0px;
+  margin-left: 10px;
+  color: #201E1F;
+  border-bottom: solid;
 }
 
 .resumeUl {
   list-style-type: disc;
   padding: 20px 0px 20px 30px;
+  color: #201E1F;
 }
 
 .resumeLi {
