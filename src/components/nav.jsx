@@ -1,10 +1,22 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './navbar';
 import '../nav.css'
 
 export default function Nav() {
   const [currentPage, setPage] = useState('/');
+
+  useEffect(() => {
+    const savedPage = localStorage.getItem('currentPage');
+    if (savedPage) {
+      setPage(savedPage)
+    }
+  }, []);
+
+  const handlePageChange = (page) => {
+    setPage(page);
+    localStorage.setItem('currentPage', page);
+  };
 
   return(
     <Navbar 
@@ -14,7 +26,7 @@ export default function Nav() {
           key={1} 
           className= {`${currentPage === '/portfolio' ? 'nav-link-item-active' :'nav-link-item'}`}
           to='/portfolio'
-          onClick={() => setPage('/portfolio')}
+          onClick={() => handlePageChange('/portfolio')}
           >
           Portfolio
         </Link>,
@@ -22,7 +34,7 @@ export default function Nav() {
           id='about' key={2} 
           className= {`${currentPage === '/' ? 'nav-link-item-active' :'nav-link-item'}`}
           to='/'
-          onClick={() => setPage('/')}
+          onClick={() => handlePageChange('/')}
           >
           About
         </Link>,
@@ -31,7 +43,7 @@ export default function Nav() {
           key={3} 
           className= {`${currentPage === '/contact' ? 'nav-link-item-active' :'nav-link-item'}`}
           to='/contact'
-          onClick={() => setPage('/contact')}
+          onClick={() => handlePageChange('/contact')}
           >
           Contact
         </Link>,
@@ -40,7 +52,7 @@ export default function Nav() {
           key={4}
           className= {`${currentPage === '/resume' ? 'nav-link-item-active' :'nav-link-item'}`}
           to='/resume'
-          onClick={() => setPage('/resume')}
+          onClick={() => handlePageChange('/resume')}
           >
           Resume
         </Link>
