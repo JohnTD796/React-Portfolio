@@ -1,4 +1,3 @@
-import React from 'react';
 import PortfolioCard from "./portfolioCard";
 
 export default function Portfoliolist({portfolioData}) {
@@ -14,4 +13,4 @@ export default function Portfoliolist({portfolioData}) {
       ))}
     </div>
   );
-};
+}

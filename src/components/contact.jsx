@@ -11,16 +11,27 @@ export default function Contact() {
     message: ''
   });
 
-  const handleError = (field) => {
+  const validateEmail = (email) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(String(email).toLowerCase())
+  }
+
+  const handleError = (field, value) => {
+    let error ='';
+    if (!value) {
+      error = 'This field is required!'
+    } else if (field === 'email' && !validateEmail(value)) {
+      error = 'Invalid email address!'
+    }
     setErrors((prevErrors) => ({
       ...prevErrors,
-      [field]: !eval(field) ? 'This field is required.' : ''
+      [field]: error
     }));
   };
 
   return(
     <div className='contactContainer'>
-      <div>
+      <div className='pageTitleContainer'>
         <h3 className="pageTitle">Contact</h3>
       </div>
       <div className='inputDiv'>
@@ -29,17 +40,17 @@ export default function Contact() {
           type='text' 
           value={name} 
           onChange={(e) => setName(e.target.value)}
-          onBlur={() => handleError('name')}
+          onBlur={() => handleError('name', name)}
           ></input>
           {errors.name && <div className='contactError'>{errors.name}</div>}
       </div>
-      <div typeof='email' className='inputDiv'>
+      <div className='inputDiv'>
         <h2>Email:</h2>
         <input 
-          type='text' 
+          type='email' 
           value={email} 
           onChange={(e) => setEmail(e.target.value)}
-          onBlur={() => handleError('email')}
+          onBlur={() => handleError('email', email)}
           ></input>
           {errors.email && <div className='contactError'>{errors.email}</div>}
       </div>
@@ -49,7 +60,7 @@ export default function Contact() {
           type='text' 
           value={message} 
           onChange={(e) => setMessage(e.target.value)}
-          onBlur={() => handleError('message')}
+          onBlur={() => handleError('message', message)}
           ></textarea>
           {errors.message && <div className='contactError'>{errors.message}</div>}
       </div>

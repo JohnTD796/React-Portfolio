@@ -1,4 +1,3 @@
-import React from 'react';
 import SocialNetworkImage from '../images/SocialNetwork.png'
 import StoryRouletteImage from '../images/storyRoulette.png'
 import EmployeeTrackerImage from '../images/employeeTracker.png'
@@ -49,10 +48,12 @@ export default function portfolio() {
 
   return(
     <div>
-      <h3 className="pageTitle">My Portfolio</h3>
+      <div className='pageTitleContainer'>
+        <h3 className="pageTitle">My Portfolio</h3>
+      </div>
       <div className='portfolio-card-container'>
         <PortfolioList portfolioData={portfolioData} />
       </div>
     </div>
   );
-};
+}
