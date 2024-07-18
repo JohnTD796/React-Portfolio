@@ -7,6 +7,15 @@ padding: 20px 0px 20px 90px;
   color: #201E1F;
 }
 
+.downloadResume a {
+  text-decoration: none;
+  color: #201E1F;
+}
+
+.downloadResume a:hover {
+  color: #FF4000;
+}
+
 .resumeTitle {
   display: inline-block;
   font-size: 175%;

@@ -1,13 +1,14 @@
-import React from 'react';
 import './App.css';
-import { Outlet } from 'react-router-dom'
-import Nav from './components/nav'
+import { Outlet } from 'react-router-dom';
+import Nav from './components/nav';
+import Footer from './components/footer';
 
 function App() {
   return (
     <>
       <Nav />
       <Outlet />
+      <Footer />
     </>
   )
 }
