@@ -1,4 +1,7 @@
-import '../resume.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import '../resume.css';
+import downloadResume from '../pdf/JohnDoyleResume.pdf';
 
 export default function Resume() {
   return (
@@ -8,7 +11,7 @@ export default function Resume() {
       </div>
       <div className='resumeBodyContainer'>
         <div>
-          <div className='downloadResume'>Download my Resume:</div>
+          <div className='downloadResume'>Download my Resume:<a href={downloadResume}> <FontAwesomeIcon icon={faDownload} /></a></div>
           <h4 className="resumeTitle">Front-End Proficiencies</h4>
           <ul className='resumeUl'>
             <li className="resumeLi">HTML</li>
