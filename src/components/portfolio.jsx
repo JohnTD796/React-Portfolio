@@ -1,4 +1,4 @@
-import SocialNetworkImage from '../images/socialNetwork.png'
+import socialNetwork from '../images/socialNetwork.png'
 import StoryRouletteImage from '../images/storyRoulette.png'
 import EmployeeTrackerImage from '../images/employeeTracker.png'
 import MovieNightImage from '../images/movieNight.png'
@@ -13,7 +13,7 @@ export default function portfolio() {
       id: 1,
       title: 'Social Network API',
       projectUrl: 'https://github.com/JohnTD796/Social-Network-API.git',
-      imageUrl: SocialNetworkImage
+      imageUrl: socialNetwork
     },
     {
       id: 2,
