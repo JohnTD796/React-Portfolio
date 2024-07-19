@@ -1,9 +1,9 @@
-import socialNetwork from '../images/socialNetwork.png'
-import StoryRouletteImage from '../images/storyRoulette.png'
-import EmployeeTrackerImage from '../images/employeeTracker.png'
-import MovieNightImage from '../images/movieNight.png'
-import readmeGenerator from '../images/readmeGenerator.png'
-import personalBlog from '../images/personalBlog.png'
+import socialNetwork from '../assets/images/socialNetwork.png'
+import StoryRouletteImage from '../assets/images/storyRoulette.png'
+import EmployeeTrackerImage from '../assets/images/employeeTracker.png'
+import MovieNightImage from '../assets/images/movieNight.png'
+import readmeGenerator from '../assets/images/readmeGenerator.png'
+import personalBlog from '../assets/images/personalBlog.png'
 import PortfolioList from "./portfolioList";
 import '../portfolio.css'
 
