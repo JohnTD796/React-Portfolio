@@ -14,3 +14,21 @@
   padding: 10px;
   color: #FF4000;
 }
+
+.imageContainer {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin: 0 auto;
+}
+
+.portfolioPicture {
+  width: 300px;
+  height: auto;
+  border-radius: 25%;
+  object-fit: cover;
+  object-position: center top;
+  padding: 10px;
+}
